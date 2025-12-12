@@ -51,6 +51,9 @@ BEQZ, BNEQZ
 
 HLT
 
+
+### **Tested using Xilinx Vivado 2025.1**
+
 ## Pipeline Registers
 
 | Stage    | Registers                                                   |
@@ -59,6 +62,8 @@ HLT
 | ID → EX  | ID_EX_IR, ID_EX_A, ID_EX_B, ID_EX_Imm, ID_EX_type           |
 | EX → MEM | EX_MEM_IR, EX_MEM_ALUOut, EX_MEM_B, EX_MEM_type             |
 | MEM → WB | MEM_WB_IR, MEM_WB_ALUOut, MEM_WB_LMD, MEM_WB_type           |
+
+<img width="732" height="361" alt="image" src="https://github.com/user-attachments/assets/0a0e8968-1b2e-484a-8aeb-1e6000fc0528" />
 
 
 ## **Test Program Loaded in Memory**
@@ -87,6 +92,8 @@ The testbench loads the following instructions:
 | R3       | 25     |
 | R4       | 30     |
 | R5       | 55     |
+
+<img width="375" height="270" alt="image" src="https://github.com/user-attachments/assets/4620654c-e05f-4c23-afcb-1006a63a7ae4" />
 
 
 The testbench prints TEST PASSED when the results match.
